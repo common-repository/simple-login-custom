@@ -1,0 +1,99 @@
+#: your-php-file.php:3
+msgid "Réglages du plugin de connexion personnalisée"
+msgstr "Custom Login Plugin Settings"
+
+#: your-php-file.php:5
+msgid "Style"
+msgstr "Style"
+
+#: your-php-file.php:6
+msgid "Contrôle de connexion simple"
+msgstr "Simple Login Control"
+
+#: your-php-file.php:14
+msgid "Style du formulaire de connexion"
+msgstr "Login Form Style"
+
+#: your-php-file.php:74
+msgid "Aperçu du formulaire de connexion"
+msgstr "Login Form Preview"
+
+#: your-php-file.php:77
+msgid "Largeur du formulaire"
+msgstr "Form Width"
+
+#: your-php-file.php:81
+msgid "Couleur de fond du formulaire"
+msgstr "Form Background Color"
+
+#: your-php-file.php:85
+msgid "Couleur du texte du formulaire"
+msgstr "Form Text Color"
+
+#: your-php-file.php:89
+msgid "Couleur du contour du formulaire"
+msgstr "Form Border Color"
+
+#: your-php-file.php:93
+msgid "Style du contour du formulaire"
+msgstr "Form Border Style"
+
+#: your-php-file.php:97
+msgid "Epaisseur du contour du formulaire"
+msgstr "Form Border Width"
+
+#: your-php-file.php:101
+msgid "Décalage du contour du formulaire"
+msgstr "Form Border Padding"
+
+#: your-php-file.php:109
+msgid "Style du lien personnalisé"
+msgstr "Custom Link Style"
+
+#: your-php-file.php:114
+msgid "Aperçu du lien du formulaire de connexion"
+msgstr "Login Link Preview"
+
+#: your-php-file.php:123
+msgid "Partie normale du texte du lien"
+msgstr "Normal Part of Link Text"
+
+#: your-php-file.php:127
+msgid "Texte du lien avec le lien"
+msgstr "Link Text with Link"
+
+#: your-php-file.php:131
+msgid "Couleur du lien"
+msgstr "Link Color"
+
+#: your-php-file.php:135
+msgid "Style de soulignement du lien"
+msgstr "Link Underline Style"
+
+#: your-php-file.php:138
+msgid "Aucun"
+msgstr "None"
+
+#: your-php-file.php:139
+msgid "Souligné"
+msgstr "Underline"
+
+#: your-php-file.php:140
+msgid "Sur la ligne"
+msgstr "Overline"
+
+#: your-php-file.php:141
+msgid "Traversé"
+msgstr "Line-Through"
+
+#: your-php-file.php:142
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: your-php-file.php:143
+msgid "Utilisez le shortcode suivant pour afficher le formulaire de connexion personnalisé sur n'importe quelle page :"
+msgstr "Use the following shortcode to display the custom login form on any page:"
+
+#: your-php-file.php:144
+msgid "Utilisez le shortcode suivant pour afficher le lien vers le formulaire personnalisé avec un texte personnalisé :"
+msgstr "Use the following shortcode to display a link to the custom form with custom text:"

@@ -1,0 +1,215 @@
+/* CSS pour l'aperçu */
+.preview-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+	/*float: right;*/
+    margin-left: 20px;
+}
+
+.form-preview {
+    float: right;
+    margin-left: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+.link-preview {
+    float: right;
+    margin-left: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+.preview-container h3 {
+    margin-top: 0;
+}
+
+.login-form-preview,
+.login-link-preview,
+.register-form-preview {
+    margin-top: 10px;
+	pointer-events: none;
+}
+/** passer de connecter a creer **/
+
+.form-navigation {
+    display: flex;
+    justify-content: center; /* Centrer les boutons si vous le souhaitez */
+    margin-bottom: 20px; /* Espacement en dessous des boutons */
+}
+
+.switch-form {
+    background-color: #0073aa; /* Une couleur qui correspond à l'aspect de WordPress */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px; /* Bordures arrondies */
+    transition: background-color 0.3s; /* Transition pour le survol */
+}
+
+.switch-form:hover {
+    background-color: #005177; /* Couleur de fond au survol */
+}
+
+.switch-form.login-btn {
+    margin-right: 10px; /* Espacement entre les boutons */
+}
+
+.switch-form.register-btn {
+    background-color: #2271b1; /* Une couleur légèrement différente pour le bouton d'inscription */
+}
+
+.switch-form.register-btn:hover {
+    background-color: #135e96;
+}
+
+/* Si vous voulez que le bouton actif ait un style différent */
+.switch-form.active {
+    background-color: #0a4b78; /* Couleur pour le bouton actif */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15); /* Ombre à l'intérieur pour donner un effet "pressé" */
+}
+
+/** se connecter ou creer *//
+/*
+.form-navigation {
+    text-align: center;
+    margin-bottom: 10px;
+}
+*/
+.form-navigation button {
+    margin: 0 5px;
+}
+
+.form-options {
+    margin-bottom: 10px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/** Les classes a remplacer par button tout court si on veut que ça soit partout **/
+
+.create-account-btn {
+    /* Apparence de base */
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: 5px;
+
+    /* Effet de transition pour les interactions */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    /* Position relative pour les pseudo-éléments */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet de survol */
+.create-account-btn:hover {
+    background-color: #52b71f;
+}
+
+/* Effet de transition avec des pseudo-éléments pour un effet plus dynamique */
+.create-account-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: #003177;
+    box-shadow: inset 0px 0px 0px #b6cdef;
+    transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.create-account-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: #a9c1e8;
+    transition: all 0.4s cubic-bezier(0.7, 0.25, 0, 1);
+}
+
+.create-account-btn:hover::before, .create-account-btn:hover::after {
+    width: 100%;
+}
+
+/* Pour s'assurer que le texte reste centré et ne bouge pas avec les effets */
+.create-account-btn span {
+    position: relative;
+    z-index: 1;
+}
